@@ -1,0 +1,42 @@
+Name: Shouman Das
+Email: shouman.das@rochester.edu
+Course: CSC446
+Homework: 
+Implement perceptron for the adult income dataset using Python. Data available in /u/cs246/data/adult. Experiment with performance as a function of number of iterations.
+
+************ Files *********
+
+das_shouman_hw3.py
+README
+plot.png
+plot.py
+
+************ Algorithm *****
+
+We implement Stochastic GD for the SVM algorithm on the adult income dataset. We minimize the cost function is J = (1/2)*(w^T)w + C Sum(1..N) max(0, 1 - y_n(w^T x^(n) +b)). 
+
+
+************ Instructions ***
+
+The main algorithm is on das_shouman_hw3.py which is executable with --epochs and --capacity argument. If the arguments are not given then default value epochs = 1 and capacity = 0.846 will be used. 
+Sample command:
+./das_shouman_hw3.py --epochs 1 --capacity 0.868
+
+To create the plot, execute plot.py. It will show and save a png file containing the plot.
+*** this script will take some time to produce the plot( approx 20-25secs).
+Sample command:
+./plot.py
+
+
+************ Results *******
+
+Comparing our results to the previous homework, we see that SVM performs slightly better than perceptron. But for SVM learning rate and capacity is also important. If we do not choose a suitable hyperparameter, SVM's performance might be worse.
+
+************ Your interpretation **** (Attention: important!)
+
+From this implementation we see that capacity is highly important for SVM algorithm. By observing the plot, we understand that a capacity value of 0.05 to 0.1 gives the best accuracy on dev set. We might also need to experiment with the learning rate (we did not do it in this assignment). 
+
+************ References ************
+1. Lecture Notes(https://www.cs.rochester.edu/~gildea/2018_Spring/notes.pdf)
+2.  Book: Bishop, Christopher, Pattern Recognition and Machine Learning (chapter 7.1, Maximum Margin Classifier)
+
