@@ -34,7 +34,7 @@ Comparing our results to the previous homework, we see that SVM performs slightl
 
 ************ Your interpretation **** (Attention: important!)
 
-From this implementation we see that capacity is highly important for SVM algorithm. By observing the plot, we understand that a capacity value of 0.05 to 0.1 gives the best accuracy on dev set. We might also need to experiment with the learning rate (we did not do it in this assignment). 
+From this implementation we see that capacity is highly important for SVM algorithm. By observing the plot, we understand that a capacity value of 0.05 to 0.1 gives the best accuracy on dev set (~85% accuracy). If we increase the capacity to more than 10 we see a significant drop in the accuracy. We might also need to experiment with the learning rate (we did not do it in this assignment). 
 
 ************ References ************
 1. Lecture Notes(https://www.cs.rochester.edu/~gildea/2018_Spring/notes.pdf)
