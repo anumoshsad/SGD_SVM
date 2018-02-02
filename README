@@ -1,8 +1,8 @@
 Name: Shouman Das
 Email: shouman.das@rochester.edu
 Course: CSC446
-Homework: 
-Implement perceptron for the adult income dataset using Python. Data available in /u/cs246/data/adult. Experiment with performance as a function of number of iterations.
+Homework: HW3
+Implement SGD for SVM for the adult income dataset. Experiment with performance as a function of the capacity parameter C. 
 
 ************ Files *********
 
@@ -13,7 +13,7 @@ plot.py
 
 ************ Algorithm *****
 
-We implement Stochastic GD for the SVM algorithm on the adult income dataset. We minimize the cost function is J = (1/2)*(w^T)w + C Sum(1..N) max(0, 1 - y_n(w^T x^(n) +b)). 
+We implement Stochastic GD for the SVM algorithm on the adult income dataset. We minimize the cost function is J = (1/2)*(w^T)w + C Sum(1..N) max(0, 1 - y_n(w^T x^(n) +b)). The rows of the adult dataset is sampled sequentially from the beginning to the end.
 
 
 ************ Instructions ***
@@ -39,4 +39,3 @@ From this implementation we see that capacity is highly important for SVM algori
 ************ References ************
 1. Lecture Notes(https://www.cs.rochester.edu/~gildea/2018_Spring/notes.pdf)
 2.  Book: Bishop, Christopher, Pattern Recognition and Machine Learning (chapter 7.1, Maximum Margin Classifier)
-
